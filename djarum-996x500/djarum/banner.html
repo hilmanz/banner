@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="assets/css/banner.css">
+        <script src="assets/vendor/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div id="banner">
+            <div id="content">
+                <div class="layer"><img  id="BACK" src="assets/images/BACK.gif"></div>
+                <div class="layer"><img  id="IN" src="assets/images/IN.gif"></div>
+                <div class="layer"><img  id="BLACK" src="assets/images/BLACK.gif"></div>
+                <div class="layer"><img  id="SmallTriangle" src="assets/images/triangle.png"></div>
+                <div class="layer"><img  id="car" src="assets/images/car2.gif"></div>
+                <div class="layer"><img  id="car2" src="assets/images/car.gif"></div>
+                <div class="layer"><img  id="motorcycle" src="assets/images/motor.gif"></div>
+                <div class="layer"><img  id="motorcycle2" src="assets/images/motorcycle.gif"></div>
+                <div class="layer"><img  id="LogoDjarumBLACK" src="assets/images/LogoDjarumBLACK.gif"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        var tl = new TimelineLite();
+            tl.from("#BACK",0.5, {scale:3, autoAlpha:0})  
+            tl.to("#BACK",0.5, {scale:1, autoAlpha:0})  
+            tl.from("#IN",0.5, {scale:3, autoAlpha:0},"-=0.5") 
+            tl.to("#IN",0.5, {scale:1, autoAlpha:0})  
+            tl.from("#BLACK",1, {scale:3, autoAlpha:0},"-=0.5") 
+            tl.to("#BLACK",1.5, {scale:1, autoAlpha:0,delay:1}) 
+            tl.from("#SmallTriangle", 1 , {scale:1, autoAlpha:0},"-=2.5") 
+            tl.to("#SmallTriangle", 0.5 , {scale:0.5}) 
+            tl.fromTo("#car", 2 , {left:500,scale:0.001,opacity:1}, {left:-100,scale:5,opacity:0} ) 
+            tl.fromTo("#car2", 2 , {left:500,scale:0.001,opacity:1}, {left:1000,scale:5,opacity:0} ,"-=0.5") 
+            tl.fromTo("#motorcycle", 2 , {left:500,scale:0.001,opacity:1}, {left:-100,scale:5,opacity:0} ,"-=0.5") 
+            tl.fromTo("#motorcycle2", 2 , {left:500,scale:0.001,opacity:1}, {left:1000,scale:5,opacity:0} ,"-=0.5") 
+            tl.to("#SmallTriangle", 2 , {scale:5, autoAlpha:0},"-=1") 
+            tl.from("#LogoDjarumBLACK", 1, {scale:5, autoAlpha:0},"-=1") 
+
+        </script>
+    </body>
+</html>

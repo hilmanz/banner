@@ -1,0 +1,215 @@
+/*
+Theme Name: DJARUM BANNER
+Author: Acit Jazz
+Version: 1.0
+*/
+/* CSS reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+	background: none;
+}
+/* ========================= GENERAL STYLE ========================= */
+#banner,#banner-expand{
+	width: 980px; height: 50px;
+	overflow: hidden;
+	bottom: 0;
+	position: absolute;
+	background: url(../images/bg_awan.jpg) no-repeat #fff;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+#banner.expand{
+	bottom: -50px;
+}
+#banner-expand{
+	background: url(../images/default.jpg) no-repeat;
+	height: 250px;
+	bottom: -250px;
+}
+#banner-expand.expand{
+	bottom: 0;
+}
+#awan,#awan2{
+	position: absolute;
+	right: -500px; top: 0;
+	opacity: 0.5;
+}
+#awan2{
+	z-index: 10;
+}
+#balon{
+    position: absolute;
+    left: 0; top: -187px;
+}
+#expand-button{
+	position: absolute;
+	z-index: 12;
+	width: 100%; height: 100%;
+	left: 0; top: 0;
+}
+#cta{
+    width: 406px; height: 50px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -25px 0 0 -105px;
+}
+#walk{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -18px 0 0 -350px;
+}
+#paracute{
+	position: absolute;
+	left: 350px;
+	top: 0;
+}
+#video-container{
+	background: #000;
+	position: absolute;
+	width: 360px; height: 202px;
+	left: 50%; top: 7px;
+	margin: 0 0 0 -200px;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+button {
+	background: none;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    cursor: pointer;
+}
+
+#clickthrough-button{
+    width: 980px;
+    height: 250px;
+    background-color: transparent;
+}
+
+.label {
+    color: #0D2A4D;
+    position: absolute;
+    margin-left: 10px;
+    top: 35px;
+}
+body {
+    margin: 0px;
+}
+#container {
+    position: absolute;
+    display: block;
+    width: 980px;
+    height: 250px;
+}
+#ad {
+    position: relative;
+    display: block;
+    left: 0px;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#ad.collapsed {
+    width: 980px;
+    /*2px smaller to account for border*/
+
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    /*2px smaller to account for border*/
+}
+#ad.expanded {
+    width: 980px;
+    /*2px smaller to account for border*/
+
+    height: 250px;
+    /*2px smaller to account for border*/
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 980px;
+    height: 50px;
+    left: 0px;
+	background: url(../images/bg.gif) no-repeat #fff;
+	background-size: cover;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+#panel {
+    position: absolute;
+    width: 980px;
+    height: 250px;
+    background-color: #FFF;
+	background: url(../images/default.jpg) no-repeat;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.expanded #banner {
+    display: none;
+}
+.collapsed #panel {
+    display: none;
+}
+.button {
+    height: 26px;
+    width: 108px;
+}
+.button.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 74px;
+    text-transform:uppercase;
+    color: #fff;
+}
+.label {
+    font-size: 14px;
+    top: 65px;
+}
+#panel .label {
+    width: 230px;
+}
+video {
+    height: 100%;
+    width: 100%;
+}
+.collapsed video {
+    display: none;
+}
+.expanded video {
+    display: block;
+}
+.ios-center-video-controls video::-webkit-media-controls {
+    min-width: 0;
+}/*
+.sdk .sdk-video-player {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("../images/poster.jpg");
+    background-size: cover;
+}
+.sdk .sdk-video-player-button {
+    cursor: pointer;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url("../images/play.png") no-repeat scroll 0px 0px;
+    background-size: cover;
+}*/

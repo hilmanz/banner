@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Single Expandable: 320x50 to 320x416</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script>
+        EBModulesToLoad = ['EBCMD'];
+    </script>
+    <script src="scripts/EBLoader.js"></script>
+    <!--[if lte IE 9]><script src="scripts/classList.js"></script><![endif]-->
+    <script>
+        EB.initExpansionParams(0, 0, 320, 416);
+    </script>
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="ad" class="collapsed">
+            <div id="banner">
+                <div class="label"><strong>HTML5 Single Expandable:</strong> 320x50</div>
+                <div class="buttons">
+                    <button id="expand-button" class="button expand">Expand</button>
+                </div>
+            </div>
+            <div id="panel">
+                <button id="close-button" class="button close">Close</button>
+                <div class="label"><strong>HTML5 Single Expandable:</strong> 320x416</div>
+                <div class="buttons">
+                    <button id="user-action-button" class="button useraction">UserAction</button>
+                    <button id="clickthrough-button" class="button clickthrough">ClickThrough</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

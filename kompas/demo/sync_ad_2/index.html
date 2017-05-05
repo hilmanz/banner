@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Sizmek JS Sync Block - HTML5</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.0/TweenMax.min.js"></script>
+		<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+		<script type="text/javascript" src="js/sync_2.js"></script>
+
+	</head>
+
+	<body style="margin:0px;" onLoad="loadEB();">
+
+			<div id="sizmek_sync_block">
+				<img id="spot1a" src="images/970x90-spot1.png">
+				<img id="laser1a" src="images/970x90-laser2.png">
+				<img id="spot2a" src="images/970x90-spot3.png">
+				<img id="laser2a" src="images/970x90-laser3.png">
+				<img id="spot3a" src="images/970x90-spot2.png">
+				<img id="laser3a" src="images/970x90-laser.png">
+				<img id="logo" src="images/970x90-bib.png">
+				<div id="connect_text"></div>
+				<div id="clickthrough"></div>
+			</div>
+        <script type="text/javascript">
+            TweenMax.from("#logo",0.5, {x:-300,delay:1,autoAlpha:0, ease:Bounce.easeOut});
+            TweenMax.from("#spot1a",3, {delay:2,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+            TweenMax.from("#laser1a",3, {delay:2.5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+            TweenMax.from("#spot2a",3, {delay:3,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+            TweenMax.from("#laser2a",3, {delay:3.5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+            TweenMax.from("#spot3a",3, {delay:4,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+            TweenMax.from("#laser3a",3, {delay:4.5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+        </script>
+
+	</body>
+</html>

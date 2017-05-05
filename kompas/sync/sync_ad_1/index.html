@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Sizmek JS Sync Block - HTML5</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.0/TweenMax.min.js"></script>
+		<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+		<script type="text/javascript" src="js/sync_1.js"></script>
+
+	</head>
+
+	<body style="margin:0px;" onLoad="loadEB();">
+
+		<div id="sizmek_sync_block">
+			<img id="laser1" src="images/300x250-laser.png">
+			<img id="spot3" src="images/300x250-spot1.png">
+			<img id="spot4" src="images/300x250-spot2.png">
+			<img id="button" src="images/300x250-button.png">
+			<img id="logo" src="images/300x250-logo.png">
+			<div id="clickthrough" class="click"></div>
+		</div>
+	
+	    <script type="text/javascript">
+
+	        TweenMax.from("#logo",0.5, {scale:4,delay:1,autoAlpha:0, ease:Bounce.easeOut});
+	        TweenMax.from("#button",0.5, {scale:4,delay:1.5,autoAlpha:0, ease:Bounce.easeOut});
+
+
+	        $(document).ready(function(){
+	           $("#clickthrough").mouseover(function(){
+			        TweenMax.from("#spot3",3, {delay:4,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+			        TweenMax.from("#laser1",3, {delay:4.5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+			        TweenMax.from("#spot4",3, {delay:5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+	            });
+	        });
+	    </script>
+
+	</body>
+</html>

@@ -1,0 +1,58 @@
+/*
+Theme Name: DJARUM BANNER
+Author: Acit Jazz
+Version: 1.0
+*/
+/* CSS reset */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+}
+/* ========================= GENERAL STYLE ========================= */
+body{
+	background: url(../images/demo.png) no-repeat center top;
+}
+#banner{
+	background: none;
+	margin: 100px auto;
+	width: 1166px; height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+#smoke,#triangle,#city,#BackINBlack-Small,#logo,#hw{
+	position: absolute;
+}
+#BackINBlack{
+	position: absolute;
+	left: 0;  top: 0;
+}
+#triangle{
+    width: 275px;
+    bottom: 18px;
+    left: 50%;
+    margin: 0 0 0 -141px;
+}
+#BackINBlack-Small{
+	left: 50%;
+	top: 120px;
+	margin: 0 0 0 -325px;
+}
+#city{
+	left: 0; top: 0;
+}
+#logo{
+	bottom: 120px;
+	right: 40px;
+}
+#hw{
+	left: 0;
+	bottom: 0;
+}
+#bg{
+	background: #000;
+	width: 1166px; height: 600px;
+}

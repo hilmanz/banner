@@ -1,0 +1,58 @@
+body {
+	text-align: center;
+}
+#sizmek_sync_block img{
+	position: absolute;
+}
+#sizmek_sync_block {
+	position: absolute;
+	background: url( ../images/970x90.jpg ) no-repeat;
+	height: 90px;
+	width: 970px;
+	z-index: 1;
+	cursor: pointer;
+	padding: 0;
+	overflow: hidden;
+
+}
+#clickthrough {
+	position: absolute;
+	z-index: 1;
+	height: 90px;
+	width: 970px;
+	top: 0;
+	left: 0;
+}
+#logo{
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+#spot1a{
+	left: 50px;
+	bottom: -10px;
+}
+#laser1a{
+	left: 150px;
+	bottom: -10px;
+}
+#spot2a{
+	left: 480px;
+	bottom: -10px;
+}
+#laser2a{
+	left: 365px;
+	bottom: -5px;
+}
+
+#spot3a{
+	right: 100px;
+	bottom: -10px;
+}
+#laser3a{
+	right: 0;
+	bottom: -5px;
+}
+
+
+

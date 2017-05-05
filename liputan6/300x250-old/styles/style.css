@@ -1,0 +1,179 @@
+/*
+Theme Name: DJARUM BANNER
+Author: Acit Jazz
+Version: 1.0
+*/
+/* CSS reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+	background: none;
+}
+/* ========================= GENERAL STYLE ========================= */
+
+#light1,#light2,#light3,#light4{
+    position: absolute;
+    right: 105px;
+    top: 73px;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0);
+    box-shadow: 42px 0 15px #fff,41px 22px 24px 0px #fff;
+}
+#light1{
+    right: 234px;
+    top: 20px;
+    width: 18px;
+    height: 10px;
+}
+#light2{
+    right: 277px;
+    top: 38px;
+}
+#light3{
+    right: 87px;
+    top: 91px
+}
+#light4{
+    right: 94px;
+    top: 30px;
+}
+#video-container{
+	background: #000;
+	position: absolute;
+	width: 533px; height: 300px;
+	left: 50%; top: 150px;
+	margin: 0 0 0 -275px;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+button {
+	background: none;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    cursor: pointer;
+}
+.label {
+    color: #0D2A4D;
+    position: absolute;
+    margin-left: 10px;
+    top: 35px;
+}
+body {
+    margin: 0px;
+}
+#expand-button{
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; right: 0;
+    display: block;
+}
+#container {
+    position: absolute;
+    display: block;
+    width: 1180px;
+    height: 600px;
+}
+#ad {
+    position: absolute;
+    display: block;
+    right: 0;
+    overflow: hidden;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#ad.collapsed {
+    width: 300px;
+    /*2px smaller to account for border*/
+    
+    height: 250px;
+    /*2px smaller to account for border*/
+}
+#ad.expanded {
+    width: 1180px;
+    /*2px smaller to account for border*/
+    
+    height: 600px;
+    /*2px smaller to account for border*/
+}
+#banner {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 250px;
+    right: 0;
+	background: url(../images/default.jpg) no-repeat #fff;
+	background-size: cover;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+#panel {
+    position: absolute;
+    width: 1180px;
+    height: 600px;
+    left: 0;
+    top: 0;
+    background-color: #FFF;
+	background: url(../images/expand.jpg) no-repeat;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.expanded #banner {
+    display: none;
+}
+.collapsed #panel {
+    display: none;
+}
+.button.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 74px;
+    text-transform:uppercase;
+    color: #fff;
+}
+.label {
+    font-size: 14px;
+    top: 65px;
+}
+#panel .label {
+    width: 230px;
+}
+video {
+    height: 100%;
+    width: 100%;
+}
+.collapsed video {
+    display: none;
+}
+.expanded video {
+    display: block;
+}
+.ios-center-video-controls video::-webkit-media-controls {
+    min-width: 0;
+}/*
+.sdk .sdk-video-player {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("../images/poster.jpg");
+    background-size: cover;
+}
+.sdk .sdk-video-player-button {
+    cursor: pointer;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url("../images/play.png") no-repeat scroll 0px 0px;
+    background-size: cover;
+}*/

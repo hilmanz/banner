@@ -1,0 +1,87 @@
+/*
+Theme Name: DJARUM BANNER
+Author: Acit Jazz
+Version: 1.0
+*/
+/* CSS reset */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+	background: none;
+}
+/* ========================= GENERAL STYLE ========================= */
+#banner,#banner-expand{
+	width: 1100px; height: 50px;
+	overflow: hidden;
+	bottom: 0;
+	position: absolute;
+	background: url(../images/bg_awan.jpg) no-repeat #fff;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+#banner.expand{
+	bottom: -50px;
+}
+#banner-expand{
+	background: url(../images/default.jpg) no-repeat;
+	height: 250px;
+	bottom: -250px;
+}
+#banner-expand.expand{
+	bottom: 0;
+}
+#awan,#awan2{
+	position: absolute;
+	right: -500px; top: 0;
+	opacity: 0.5;
+}
+#awan2{
+	z-index: 10;
+}
+#balon{
+    position: absolute;
+    left: 0; top: -187px;
+}
+.ctabtn{
+	display: block;
+	position: absolute;
+	z-index: 12;
+	height: 100%;
+	left: 0; top: 0;
+	width: 100%;
+}
+#cta{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -25px 0 0 -100px;
+	width: 406px; height: 50px;
+}
+#walk{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -18px 0 0 -350px;
+}
+#paracute{
+	position: absolute;
+	left: 350px;
+	top: 0;
+}
+#video{
+	background: #000;
+	position: absolute;
+	width: 360px; height: 202px;
+	left: 50%; top: 7px;
+	margin: 0 0 0 -180px;
+}
+#hw{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}

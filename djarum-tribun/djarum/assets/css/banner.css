@@ -1,0 +1,70 @@
+/*
+Theme Name: DJARUM BANNER
+Author: Acit Jazz
+Version: 1.0
+*/
+/* CSS reset */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+}
+/* ========================= GENERAL STYLE ========================= */
+#banner{
+	background: none;
+	width: 1166px; height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+#smoke,#triangle,#city,#BackINBlack-Small,#logo,#hw{
+	position: absolute;
+}
+#smoke{
+	width: 100%;
+}
+#BackINBlack{
+	position: absolute;
+	left: 0;  top: 0;
+}
+#triangle{
+    width: 275px;
+    bottom: 18px;
+    left: 50%;
+    margin: 0 0 0 -141px;
+}
+#BackINBlack-Small{
+	left: 50%;
+	top: 120px;
+	margin: 0 0 0 -325px;
+}
+#city,#city2{
+	left: 0; top: 0;
+}
+#light1,#light2,#light3,#light4{
+    position: absolute;
+    right: 105px;
+    top: 73px;
+    width: 30px;
+    height: 10px;
+    background: rgba(255,255,255,0);
+    box-shadow: 42px 0 15px #fff,41px 22px 24px 0px #fff;
+}
+#light2{
+    right: 590px;
+    top: 118px;
+}
+#light3{
+    right: 495px;
+    top: 106px;
+}
+#light4{
+    right: 417px;
+    top: 58px;
+}
+#bg{
+	background: #000;
+	width: 1166px; height: 600px;
+}

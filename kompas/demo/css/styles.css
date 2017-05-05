@@ -1,0 +1,190 @@
+body {
+	text-align: center;
+}
+
+#sizmek_sync_block img,#sizmek_sync_block2 img{
+  position: absolute;
+}
+#sizmek_sync_block {
+	position: absolute;
+	background: url( ../images/300x250.jpg ) no-repeat;
+	height: 250px;
+	width: 300px;
+	z-index: 1;
+	cursor: pointer;
+	padding: 0;
+  overflow: hidden;
+
+}
+#button{
+	position: absolute;
+	bottom: 65px;
+	left: 40px;
+}
+#logo{
+	position: absolute;
+	left: 10px; top: 10px;
+}
+#laser1{
+  right: 30px;
+  top: -10px;
+  visibility: hidden;
+}
+#spot3{
+  top: -5px;
+  left: -10px;
+  visibility: hidden;
+}
+#spot4{
+  left: 150px;
+  top: -5px;
+  visibility: hidden;
+}
+#clickthrough {
+	position: absolute;
+	z-index: 1;
+	height: 250px;
+	width: 300px;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.spot1 { left: 40%; -webkit-animation: move 5s infinite;}
+.spot2 { left: 40%; -webkit-animation: move2 5s infinite;}
+.spotlight {
+  position: absolute;
+	width: 0;
+	height: 0px;
+	bottom: 60px;
+  border-top: 500px solid rgba(255,0,0,0.25);
+  border-left: 40px solid transparent;
+  border-bottom: 0px solid #575;
+  border-right: 40px solid transparent;
+  background-color: transparent;
+  -webkit-transform-origin: 50% 100% 0;
+  z-index: 0;
+  /*-webkit-transition-timing: ease-in-out;*/
+}
+
+ @-webkit-keyframes move {
+  0%  { 
+    -webkit-transform: rotate(30deg);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+  }
+}
+
+ @-webkit-keyframes move2 {
+  0%  { 
+    -webkit-transform: rotate(-30deg);
+  }
+  50% {
+    -webkit-transform: rotate(30deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+  }
+}
+
+
+#clickthrough2 {
+  position: absolute;
+  z-index: 1;
+  height: 90px;
+  width: 970px;
+  top: 0;
+  left: 0;
+}
+#sizmek_sync_block2 {
+  position: absolute;
+  background: url( ../sync_ad_2/images/970x90.jpg ) no-repeat;
+  height: 90px;
+  width: 970px;
+  z-index: 1;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+
+}
+#logoa{
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+#spot1a{
+  left: 50px;
+  bottom: -10px;
+  visibility: hidden;
+}
+#laser1a{
+  left: 150px;
+  bottom: -10px;
+  visibility: hidden;
+}
+#spot2a{
+  left: 480px;
+  bottom: -10px;
+  visibility: hidden;
+}
+#laser2a{
+  left: 365px;
+  bottom: -5px;
+  visibility: hidden;
+}
+#spot4a{
+  right: -20px;
+  bottom: -5px;
+  visibility: hidden;
+}
+#spot3a{
+  right: 155px;
+  bottom: -10px;
+  visibility: hidden;
+}
+#laser3a{
+  right: 0;
+  bottom: -5px;
+  visibility: hidden;
+}
+#imgback{
+  top: 0;
+  left: 90px;
+}
+#imgin{
+  top: 0;
+  left: 260px;
+}
+#imgblack{
+  top: 0;
+  left: 335px;
+}
+#imgback2,#imgblack2{
+  left: 200px;
+  top: 0;
+  visibility: hidden;
+}
+#imgin2{
+  left: 250px;
+  top: 0;
+  visibility: hidden;
+}
+.spot1a { right: 40px; -webkit-animation: move 5s infinite;}
+.spot2a { right: 40px; -webkit-animation: move2 5s infinite;}
+.spotlighta {
+  position: absolute;
+  width: 0;
+  height: 0px;
+  bottom: -250px;
+  border-top: 500px solid rgba(255,0,0,0.25);
+  border-left: 40px solid transparent;
+  border-bottom: 0px solid #575;
+  border-right: 40px solid transparent;
+  background-color: transparent;
+  -webkit-transform-origin: 50% 100% 0;
+  z-index: 0;
+  /*-webkit-transition-timing: ease-in-out;*/
+}

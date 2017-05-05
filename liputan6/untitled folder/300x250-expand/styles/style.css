@@ -1,0 +1,200 @@
+body {
+	background-color: #FFF;
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+.label {
+	color: #0D2A4D;
+	position: absolute;
+	margin-left: 10px;
+	top: 36px;
+}
+
+body{
+	margin:0px;
+}
+
+#container{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#expandButton{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-color: transparent;
+}
+
+#ad{
+	position: relative;
+	display: block;
+	left:0px;
+	overflow:hidden;
+	border: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#ad.collapsed, #ad.expanded{
+	width: 100%;
+	height: 100%;
+}
+#banner{
+	position:absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left:0px;
+	visibility: hidden;  
+}
+
+#expansion{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	background-image:url(../images/expand.jpg);
+	background-position: center;
+	background-repeat:no-repeat;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.button.close{
+    border: none;
+    display: block;
+	position: absolute;
+    top: -155px;
+    right: -340px;
+	width: 30px; height: 30px;
+    background:url(../images/close.png) no-repeat #fff;
+    color: #333;
+    text-align: center;
+    line-height: 30px;
+	display: none;
+    border-radius: 300px;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+}
+
+#banner .label, #expansion .label{
+    display: none;
+}
+#banner .buttons{
+	width: 300px; height: 250px;
+	top: 0;
+	left: 0;
+}
+
+#bgImage{
+    position: absolute;
+    width: 300px; 
+    height: 250px;
+    background-image: url(../images/default.jpg);
+}
+
+@media (max-width: 399px), (max-height: 89px) {
+	#banner {
+		background-size: auto 20px;	
+	}
+	#banner .label{
+		font-size: 10px;
+		top: 36px;
+	}
+}
+
+@media (max-height: 295px) {
+	#expansion {
+		background-size: auto 20px;	
+	}
+	#expansion .label{
+		font-size: 10px;
+		top: 36px;
+	}
+}
+
+.video-container {
+	height: 270px;
+	position: absolute;
+	width: 480px;
+	display: none;
+}
+
+.sdk-video-player {
+	height: 270px;
+	width: 480px;
+	position: relative;
+	background: url(../images/poster.jpg);
+	background-size: cover;
+}
+
+.sdk-video-player-button {
+	cursor: pointer;
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	top: 102px;
+	left: 207px;
+	background: url(../images/play.png) no-repeat scroll 0px 0px;
+	background-size: cover;
+}
+
+@media (max-height: 430px), (max-width: 500px) {
+	.video-container {
+		height: 135px;
+		position: absolute;
+		width: 240px;
+	}
+  
+	.sdk-video-player {
+		height: 135px;
+		width: 240px;
+	}
+
+	.sdk-video-player-button {
+		width: 55px;
+		height: 55px;
+		top: 40px;
+		left: 92px;
+	}  
+}
+
+.centered {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+video {
+	height: 100%;
+	width: 100%;
+}
+#div1,#div2,#div3{
+    width: 70px; height: 70px;
+    position: absolute;
+    left: 50%; top: 50%;
+    margin: -35px 0 0 -35px;
+    background: #fff;
+    border-radius: 300px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+    display: none;
+    border: solid 3px #000;
+}
+#div1.startanim,#div2.startanim,#div3.startanim{
+    display: block;
+}

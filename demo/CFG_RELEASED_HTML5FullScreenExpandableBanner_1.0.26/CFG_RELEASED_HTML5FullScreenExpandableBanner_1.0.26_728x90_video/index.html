@@ -1,0 +1,44 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>HTML5 Full Screen Expandable Banner: 728x90 to Full Screen (Video)</title>
+<link rel="stylesheet" href="styles/reset.css"/> 
+<link rel="stylesheet" href="styles/style.css"/> 
+<script>EBModulesToLoad = ['Video','EBCMD'];</script>
+<script type="text/javascript" src="scripts/EBLoader.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script>EB.initExpansionParams(0, 0, 728, 90);</script>
+</head> 
+<body onload="initEB();">
+	<div id="container">
+		<div id="ad" class="collapsed">
+			<div id="banner">
+				<div class="label"></div>
+				<div class="buttons">
+					<button id="expandButton" class="button expand" onclick="javascript:handleExpandButtonClick();">Expand</button>
+				</div>
+			</div>
+			<div id="expansion">
+				<button id="closeButton" class="button close" onclick="javascript:handleCloseButtonClick();">Close</button>
+				<div class="label"><strong>HTML5 Full Screen Expandable Banner:</strong> Full Screen (Video)</div>
+				<div id="videoContainer" class="video-container centered">
+					<video id="video" controls poster="images/poster.jpg">
+						<source src="videos/video.mp4" type="video/mp4">
+						<source src="videos/video.webm" type="video/webm">
+						Your browser does not support the <code>video</code> element.
+					</video>
+					<div id="sdkVideoPlayer" class="sdk-video-player">
+						<div id="sdkVideoPlayButton" class="sdk-video-player-button"></div>
+					</div>
+				</div>
+				<div class="buttons">
+					<button id="userActionButton" class="button useraction" onclick="javascript:handleUserActionButtonClick();">UserAction</button>
+					<button id="clickthroughButton" class="button clickthrough" onclick="javascript:handleClickthroughButtonClick();">ClickThrough</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

@@ -1,0 +1,76 @@
+body {
+	text-align: center;
+}
+
+#sizmek_sync_block {
+	position: absolute;
+	background: url( ../images/back.jpg ) no-repeat;
+	height: 250px;
+	width: 300px;
+	z-index: 1;
+	cursor: pointer;
+	padding: 0;
+
+}
+
+#color_text {
+	position: relative;
+	top: 100px;
+	font-family: arial, helvetica;
+	font-size: 20px;
+	font-weight: 100;
+	color: #0d2a4d;
+}
+
+#color_block_1 {
+	position: absolute;
+	z-index: 2;
+	top: 135px;
+	left:70px;
+	height:34px;
+	width:34px;
+	background-color: #0d9884;
+}
+
+#color_block_2 {
+	position: absolute;
+	z-index: 2;
+	top: 135px;
+	left:130px;
+	height:34px;
+	width:34px;
+	background-color: #00d1c6;
+}
+
+#color_block_3 {
+	position: absolute;
+	z-index: 2;
+	top: 135px;
+	left:190px;
+	height:34px;
+	width:34px;
+	background-color: #1e79b6;
+}
+
+#connect_text {
+	position: relative;
+	top:170px;
+	font-family: arial, helvetica;
+	font-size: 20px;
+	font-weight: 100;
+	color: #fff;
+}
+
+#clickthrough {
+	position: absolute;
+	z-index: 1;
+	height: 250px;
+	width: 300px;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+

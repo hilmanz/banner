@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="assets/css/banner.css">
+        <script src="assets/vendor/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div id="banner">
+            <div id="content">
+                <div class="layer"><img  id="smoke" src="assets/images/Smoke.png"></div>
+                <div class="layer" id="bg"></div>
+                <div class="layer"><img  id="BackINBlack" src="assets/images/BackINBlack.jpg"></div>
+                <div class="layer"><img  id="triangle" src="assets/images/triangle.png"></div>
+                <div class="layer"><img  id="city" src="assets/images/City-Background.jpg"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        var tl = new TimelineLite();
+            tl.from("#smoke", 3, {scale:0.5, autoAlpha:0, top:500}) 
+            tl.to("#smoke", 2, { autoAlpha:0}) 
+            tl.from("#BackINBlack", 2, {autoAlpha:0},"-=1") 
+            tl.from("#bg", 2, {autoAlpha:0},"-=1") 
+            tl.from("#triangle", 1, {autoAlpha:0,delay:1},"-=0.25") 
+            tl.to("#triangle", 0.5, {scale:20})
+            tl.to("#BackINBlack", 0.5, {autoAlpha:0},"-=0.25")  
+            tl.to("#triangle", 0.5, {autoAlpha:0}) 
+            tl.from("#city", 1, {autoAlpha:0},"-=0.5") 
+
+        </script>
+    </body>
+</html>

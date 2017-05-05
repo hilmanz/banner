@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Sizmek JS Sync Block - HTML5</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.0/TweenMax.min.js"></script>
+		<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+		<script type="text/javascript" src="js/sync_2.js"></script>
+
+	</head>
+
+	<body style="margin:0px;" onLoad="loadEB();">
+
+
+			<div id="sizmek_sync_block">
+				<img id="spot1a" src="images/970x90-spot4.png">
+				<img id="laser1a" src="images/970x90-laser2.png">
+				<img id="spot2a" src="images/970x90-spot3.png">
+				<img id="laser2a" src="images/970x90-laser3.png">
+				<img id="spot3a" src="images/970x90-spot1.png">
+				<img id="laser3a" src="images/970x90-laser.png">
+				<img id="spot4a" src="images/970x90-spot2.png">
+				<img id="imgback" src="images/back.png">
+				<img id="imgin" src="images/in.png">
+				<img id="imgblack" src="images/black.png">
+				<img id="imgback2" src="images/back.png">
+				<img id="imgin2" src="images/in.png">
+				<img id="imgblack2" src="images/black.png">
+				<div id="clickthrough" class="click"></div>
+			</div>
+
+        <script type="text/javascript">
+
+	            TweenMax.from("#imgback",0.5, {x:-300,delay:1,autoAlpha:0, ease:Bounce.easeOut});
+	            TweenMax.from("#imgin",0.5, {x:-300,delay:1,autoAlpha:0, ease:Bounce.easeOut});
+	            TweenMax.from("#imgblack",0.5, {x:-300,delay:1,autoAlpha:0, ease:Bounce.easeOut});
+
+	            $(document).ready(function(){
+	               $("#clickthrough").mouseover(function(){
+
+			            TweenMax.to("#imgback",1, {autoAlpha:0});
+			            TweenMax.to("#imgin",1, {autoAlpha:0});
+			            TweenMax.to("#imgblack",1, {autoAlpha:0});
+
+			            TweenMax.from("#imgback2",0.5, {scale:4,delay:1, autoAlpha:0});
+			            TweenMax.from("#imgback2",0.5, {delay:1.5, autoAlpha:0});
+			            TweenMax.from("#imgin2",0.5, {scale:4,delay:1.5, autoAlpha:0});
+			            TweenMax.from("#imgin2",0.5, {delay:2, autoAlpha:0});
+			            TweenMax.from("#imgblack2",0.5, {scale:4,delay:2, autoAlpha:0});
+			            TweenMax.from("#imgblack2",1, {delay:2.7, autoAlpha:0});
+
+			            TweenMax.from("#imgback",0.5,  {scale:4,delay:3, autoAlpha:0});
+			            TweenMax.from("#imgin",0.5,   {scale:4,delay:3, autoAlpha:0});
+			            TweenMax.from("#imgblack",0.5, {scale:4,delay:3, autoAlpha:0});
+
+			            TweenMax.from("#spot1a",3, {delay:3,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+			            TweenMax.from("#laser1a",3, {delay:3.5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+			            TweenMax.from("#spot2a",3, {delay:4,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+			            TweenMax.from("#laser2a",3, {delay:4.5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+			            TweenMax.from("#spot3a",3, {delay:5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+			            TweenMax.from("#laser3a",3, {delay:5.5,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+			            TweenMax.from("#spot4a",3, {delay:6,autoAlpha:0, repeat:1000, ease:Bounce.easeOut});
+
+
+	                });
+	            });
+        </script>
+
+	</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+	text-align: center;
+}
+
+#sizmek_sync_block {
+	position: absolute;
+	background: url( ../images/back.jpg ) no-repeat;
+	height: 90px;
+	width: 728px;
+	z-index: 1;
+	cursor: pointer;
+	padding: 0;
+
+}
+
+#color_text {
+	position: absolute;
+	top: 35px;
+	left:360px;
+	font-family: arial, helvetica;
+	font-size: 20px;
+	font-weight: 100;
+	color: #0d2a4d;
+}
+
+#color_block {
+	position: absolute;
+	z-index: 2;
+	top: 20px;
+	left:455px;
+	height:50px;
+	width:255px;
+	background-color: #0d2a4d;
+}
+
+#connect_text {
+	position: absolute;
+	z-index: 2;
+	top:35px;
+	left:440px;
+	width:275px;
+	font-family: arial, helvetica;
+	font-size: 20px;
+	font-weight: 100;
+	color: #fff;
+}
+
+#clickthrough {
+	position: absolute;
+	z-index: 1;
+	height: 90px;
+	width: 728px;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+

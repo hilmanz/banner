@@ -1,0 +1,40 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>HTML5 Full Screen Expandable Banner: 320x50 to Full Screen (Video)</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.0/TweenMax.min.js"></script>
+<link rel="stylesheet" href="styles/reset.css"/> 
+<link rel="stylesheet" href="styles/style.css"/> 
+<script>EBModulesToLoad = ['Video','EBCMD'];</script>
+<script type="text/javascript" src="scripts/EBLoader.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script>EB.initExpansionParams(0, 0, 300, 250);</script>
+</head> 
+<body onload="initEB();">
+	<div id="container">
+		<div id="ad" class="collapsed">
+			<div id="banner">
+                <div id="bgImage"></div>
+				<button id="expandButton" class="button expand" onmouseover="javascript:handleExpandButtonClick();">Expand</button>
+			</div>
+			<div id="expansion">
+				<div id="videoContainer" class="video-container centered">
+                    <button id="closeButton" class="button close" onclick="javascript:handleCloseButtonClick();"></button>
+					<video id="video" controls poster="images/poster.jpg">
+						<source src="videos/video.mp4" type="video/mp4">
+						<source src="videos/video.webm" type="video/webm">
+						Your browser does not support the <code>video</code> element.
+					</video>
+					<div id="sdkVideoPlayer" class="sdk-video-player">
+						<div id="sdkVideoPlayButton" class="sdk-video-player-button"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body> 
+</html> 

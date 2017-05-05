@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML5 Single Expandable: 300x250 to 500x250 (Video)</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script>
+        EBModulesToLoad = ['Video', 'EBCMD'];
+    </script>
+    <script src="scripts/EBLoader.js"></script>
+    <!--[if lte IE 9]><script src="scripts/classList.js"></script><![endif]-->
+    <script>
+        EB.initExpansionParams(200, 0, 500, 250);
+    </script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="ad" class="collapsed">
+            <div id="banner">
+                <div class="label"><strong>HTML5 Single Expandable:</strong> 300x250 (Video)</div>
+                <div class="buttons">
+                    <button id="expand-button" class="button expand">Expand</button>
+                </div>
+            </div>
+            <div id="panel">
+                <button id="close-button" class="button close">Close</button>
+                <div class="label"><strong>HTML5 Single Expandable:</strong> 500x250 (Video)</div>
+                <div id="video-container" class="video-container centered">
+                    <video id="video" controls poster="images/poster.jpg">
+                        <source src="videos/video.mp4" type="video/mp4">
+                            <source src="videos/video.webm" type="video/webm">
+                                Your browser does not support the <code>video</code> element.
+                    </video>
+                    <div id="sdk-video-player" class="sdk-video-player">
+                        <div id="sdk-video-play-button" class="sdk-video-player-button centered"></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="user-action-button" class="button useraction">UserAction</button>
+                    <button id="clickthrough-button" class="button clickthrough">ClickThrough</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

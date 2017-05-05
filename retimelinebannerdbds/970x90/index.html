@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/style.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.0/TweenMax.min.js"></script>
+        <script>
+            EBModulesToLoad = ['Video', 'EBCMD'];
+        </script>
+        <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+        <!--[if lte IE 9]><script src="scripts/classList.js"></script><![endif]-->
+        <script>
+            EB.initExpansionParams(0, 250, 970, 250); 
+        </script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="ad" class="collapsed">
+                <div id="banner">
+                    <div id="content">
+                        <div class="layer"><img  id="awan" src="images/awan.png"></div>
+                        <div class="layer"><img  id="awan2" src="images/awan.png"></div>
+                        <div class="layer"><img  id="balon" src="images/balon.png"></div>
+                        <div class="buttons">
+                          <button id="expand-button" class="button expand">
+                          <img  id="cta" src="images/cta.png">
+                          </button>
+                        </div>
+                        <div class="layer"><img  id="walk" src="images/walk.gif"></div>
+                    </div>
+                </div>
+                <div id="panel">
+                    <button id="close-button" class="button close">Close</button>
+                    <div id="video-container" class="video-container centered">
+                        <video id="video" controls poster="images/poster.jpg">
+                            <source src="videos/video.mp4" type="video/mp4">
+                                <source src="videos/video.ogv" type="video/ogv">
+                                    Your browser does not support the <code>video</code> element.
+                        </video>
+                        <div id="sdk-video-player" class="sdk-video-player">
+                            <div id="sdk-video-play-button" class="sdk-video-player-button centered"></div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="user-action-button" class="button useraction"></button>
+                        <button id="clickthrough-button" class="button clickthrough"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            TweenMax.from("#awan",40, {x:-1500,repeat:10000});
+            TweenMax.from("#awan2",40, {x:-1500,delay:2,repeat:10000});
+            TweenMax.from("#balon",5, {y:300,delay:1});
+            TweenMax.from("#walk",0.5, {autoAlpha:0,delay:5});
+            TweenMax.from("#walk",30, {x:-110,y:4,delay:5});
+            TweenMax.from("#cta",0.5, {scale:4,delay:10,autoAlpha:0, ease:Bounce.easeOut});
+            $(document).ready(function(){
+                var myVideo = document.getElementById("video");
+                myVideo.pause();
+               $("#expand-button").on("click", function(){
+                    TweenMax.from("#video-container",0.5, {y:250, ease:Bounce.easeOut});
+                    myVideo.play();
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.0/TweenMax.min.js"></script>
+        <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+        
+                <script type="text/javascript">
+         function initEB(){
+         if (!EB.isInitialized()){
+         EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+         }else{
+         startAd();
+         }
+         }
+         function startAd(){
+         document.getElementById("banner").style.visibility = "visible";
+         }
+         function handleBannerClick(){
+             window.location.href = 'https://www.youtube.com/watch?v=gx-_v8jc194';
+             EB.clickthrough();
+         }
+         </script>
+    </head>
+    <body>
+        <div id="banner">
+            <div id="content" onclick="javascript:handleBannerClick();">
+                <div id="bg"></div>
+                <img  id="bln" src="images/bln.png">
+                <img  id="awan" src="images/awan1.png">
+                <img  id="awan2" src="images/awan1.png">
+            </div>
+             <button class="close"></button>
+        </div>
+        <script type="text/javascript">
+            TweenMax.to("#bln",10, {y:-50});
+            TweenMax.from("#awan",40, {x:-2500,repeat:10000});
+            TweenMax.from("#awan2",40, {x:-2500,delay:2,repeat:10000});
+        </script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+/*
+Theme Name: DJARUM BANNER
+Author: Acit Jazz
+Version: 1.0
+*/
+/* CSS reset */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+}
+/* ========================= GENERAL STYLE ========================= */
+#banner{
+	width: 996px; height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+#bg{
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	width: 100%; height: 100%;
+	left: 0; top: 0;
+}
+#Triangle{
+	position: absolute;
+    width: 380px;
+    left: 50%;
+    margin: 0 0 0 -190px;
+}
+#SmallTriangle{
+    position: absolute;
+    width: 211px;
+    height: 215px;
+    left: 50%;
+    top: 50%;
+    margin: -98px 0 0 -111px;
+}
+#car,#car2{
+	position: absolute;
+	width: 247px; height: 136px;
+	left: 50%;
+	top: 50%;
+	margin: -65px 0 0 -125px;
+}
+#motorcycle,#motorcycle2{
+	position: absolute;
+	width: 171px; height: 264px;
+	left: 50%;
+	top: 50%;
+	margin: -132px 0 0 -85px;
+}
+#BACK{
+	position: absolute;
+	width: 590px; height: 157px;
+	left: 50%;
+	top: 50%;
+	margin: -78px 0 0 -295px;
+}
+#IN{
+	position: absolute;
+	width: 202px; height: 146px;
+	left: 50%;
+	top: 50%;
+	margin: -73px 0 0 -101px;
+}
+#BLACK{
+	position: absolute;
+	width: 502px; height: 191px;
+	left: 50%;
+	top: 50%;
+	margin: -95px 0 0 -251px;
+}
+#LogoDjarumBLACK{
+	position: absolute;
+	left: 0; top: 0;
+}
